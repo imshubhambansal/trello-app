@@ -50,7 +50,7 @@ app.post("/signup", (req, res) => {
 
 });
 
-// User Signin
+// Existing User Signin
 app.post("/signin",(req, res) => {
 
     // Extracting username and password
@@ -77,7 +77,7 @@ app.post("/signin",(req, res) => {
     })
 });
 
-// Create new Organization by User
+// Creating new Organization by User
 app.post("/organization",authMiddleware , (req, res) => {
 
     // Extracting the userid 
